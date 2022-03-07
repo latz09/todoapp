@@ -9,86 +9,67 @@
 		<link rel="stylesheet" href="style.css" />
 		<script src="script.js" defer></script>
 	</head>
-	<body class="bg-cyan-700 m-1 shadow-inner text-cyan-800">
+	<body class="bg-cyan-700 shadow-inner text-cyan-800">
 		<div>
 			<!-- Main Container -->
 			<div>
 				<!-- To do container -->
 				<div>
-					<div
-						class="bg-cyan-200 rounded-2xl shadow-2xl shadow-cyan-500 border-4 border-cyan-100"
-					>
-						<!--========NEW TODO FORM=========-->
-						<div class="">
-							<h1
-								class="text-base text-right p-4 text-cyan-800 font-semibold opacity-80 tracking-widest"
-							>
-								Todo's...
-							</h1>
-							<form class="p-4 grid gap-y-6 text-xl">
-								<textarea
-									type="text"
-									class="place-self-stretch bg-cyan-300 rounded-bl-3xl rounded-2xl text-center shadow-xl text-blue-900 focus:outline-none focus:ring-2 focus:bg-cyan-200"
-									placeholder="New toDo...."
-								></textarea>
+					<!--========NEW TODO FORM=========-->
+					<div class="container">
+						<h1 class="stamp text-right">Todo's...</h1>
+						<form class="myform">
+							<textarea
+								type="text"
+								class="primarybox"
+								placeholder="New toDo...."
+							></textarea>
 
-								<div class="place-self-end">
-									<label for="date"></label>
-									<input
-										type="date"
-										id="date1"
-										name="doneby"
-										class="bg-cyan-300 rounded-bl-3xl rounded-2xl text-center shadow-xl text-blue-900 focus:outline-none focus:ring-2 focus:bg-cyan-200"
-									/>
-								</div>
-								<textarea
-									type="text"
-									class="place-self-stretch bg-cyan-300 rounded-bl-3xl rounded-2xl text-center shadow-xl text-blue-900 h-28 focus:outline-none focus:ring-2 focus:bg-cyan-200"
-									placeholder="Notes.."
-								></textarea>
-							</form>
-						</div>
-						<!--==========END OF FORM========== -->
-						<!-- 
+							<div class="place-self-end">
+								<label for="date"></label>
+								<input
+									type="date"
+									id="date1"
+									name="doneby"
+									class="primarybox"
+								/>
+							</div>
+							<textarea
+								type="text"
+								class="primarybox"
+								placeholder="Notes.."
+							></textarea>
+						</form>
+					</div>
+					<!--==========END OF FORM========== -->
+					<!-- 
 
 						 -->
-						<!--==========List of items========  -->
-						<div class="grid-row pb-10">
-							<div class="bg-cyan-200 m-4 rounded-xl shadow-2xl">
-								<div class="m-2 mx-auto grid grid-cols-7 space-x-4">
-									<h1
-										class="col-span-2 text-center p-4 text-cyan-800 font-semibold opacity-80 tracking-widest"
-									>
-										Do Laundry
-									</h1>
-									<p class="col-span-3 text-sm">
-										Extra notes... Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Neque veniam quaerat ratione voluptas!
-									</p>
-									<p class="text-xs">Finish by:</p>
-								</div>								
+					<!--==========List of items========  -->
+					<div class="container">
+						<div class="primarybox">
+							<div class="m-2 mx-auto grid grid-cols-7 space-x-4">
+								<h1 class="col-span-2 stamp text-center">Do Laundry</h1>
+								<p class="col-span-3 notes">
+									Extra notes... Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Neque veniam quaerat ratione voluptas!
+								</p>
+								<p class="notes">Finish by:</p>
 							</div>
-							<div class="bg-cyan-300 m-4 rounded-xl shadow-2xl">
-								<div class="m-2 mx-auto grid grid-cols-7 space-x-4">
-									<h1
-										class="col-span-2 text-center p-4 text-cyan-800 font-semibold opacity-80 tracking-widest"
-									>
-										Do Laundry
-									</h1>
-									<p class="col-span-3 text-sm">
-										Extra notes... Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Neque veniam quaerat ratione voluptas!
-									</p>
-									<p class="text-xs">Finish by:</p>
-								</div>								
+						</div>
+						<div class="primarybox">
+							<div class="m-2 mx-auto grid grid-cols-7 space-x-4">
+								<h1 class="col-span-2 stamp text-center">Do Laundry</h1>
+								<p class="col-span-3 notes">
+									Extra notes... Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Neque veniam quaerat ratione voluptas!
+								</p>
+								<p class="notes">Finish by:</p>
 							</div>
-							
 						</div>
 					</div>
 
-					<div>
-						<!-- <h1>todos</h1> -->
-					</div>
+					<div></div>
 				</div>
 			</div>
 		</div>

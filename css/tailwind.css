@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .primarybox {
+        @apply place-self-stretch bg-cyan-300 rounded-bl-3xl rounded-2xl text-center shadow-xl text-blue-900;       
+    }
+    .container {
+        @apply bg-cyan-200 rounded-2xl shadow-2xl shadow-cyan-500 border-4 border-cyan-100 mt-4 mb-4
+    }
+    .stamp {
+        @apply text-base pt-2 text-cyan-800 font-semibold opacity-80 tracking-widest
+    }
+    .myform {
+        @apply p-4 grid gap-y-6 text-xl;
+    }
+    .notes { 
+        @apply text-xs text-cyan-800 font-semibold opacity-80 tracking-widest
+    }
+}
+
+/*focus:outline-none focus ring-2 focus:bg-cyan-200*/

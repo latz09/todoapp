@@ -9,69 +9,70 @@
 		<link rel="stylesheet" href="style.css" />
 		<script src="script.js" defer></script>
 	</head>
-	<body class="bg-cyan-700 shadow-inner text-cyan-800">
-		<div>
-			<!-- Main Container -->
-			<div>
-				<!-- To do container -->
-				<div>
-					<!--========NEW TODO FORM=========-->
-					<div class="container">
-						<h1 class="stamp text-right">Todo's...</h1>
-						<form class="myform">
-							<textarea
-								type="text"
-								class="primarybox"
-								placeholder="New toDo...."
-							></textarea>
+	<body
+		class="shadow-inner p-2 text-amber-800"
+		background="./imgs/plankwlight.jpg"
+	>
+		<!--========NEW TODO FORM=========-->
+		<div class="titlelogo">
+			<h1 class="text-2xl lg:invisible">List of my todo's</h1>
 
-							<div class="place-self-end">
-								<label for="date"></label>
-								<input
-									type="date"
-									id="date1"
-									name="doneby"
-									class="primarybox"
-								/>
-							</div>
-							<textarea
-								type="text"
-								class="primarybox"
-								placeholder="Notes.."
-							></textarea>
-						</form>
-					</div>
-					<!--==========END OF FORM========== -->
-					<!-- 
+			<div class="grid gap-4 place-items-center lg:grid-cols-5">
+				<div class="container lg:col-span-2 lg:order-last">					
+					<form class="myform">
+						<textarea
+							type="text"
+							class="primarybox focus:outline-none focus ring-2 focus:bg-amber-300"
+							placeholder="New toDo...."
+						></textarea>
 
-						 -->
-					<!--==========List of items========  -->
-					<div class="container">
-						<div class="primarybox">
-							<div class="m-2 mx-auto grid grid-cols-7 space-x-4">
-								<h1 class="col-span-2 stamp text-center">Do Laundry</h1>
-								<p class="col-span-3 notes">
-									Extra notes... Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Neque veniam quaerat ratione voluptas!
-								</p>
-								<p class="notes">Finish by:</p>
-							</div>
+						<div class="place-self-end">
+							<label for="date"></label>
+							<input
+								type="date"
+								id="date1"
+								name="doneby"
+								class="primarybox focus:outline-none focus ring-2 focus:bg-amber-300"
+							/>
 						</div>
-						<div class="primarybox">
-							<div class="m-2 mx-auto grid grid-cols-7 space-x-4">
-								<h1 class="col-span-2 stamp text-center">Do Laundry</h1>
-								<p class="col-span-3 notes">
-									Extra notes... Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Neque veniam quaerat ratione voluptas!
-								</p>
-								<p class="notes">Finish by:</p>
-							</div>
+						<textarea
+							type="text"
+							class="primarybox focus:outline-none focus ring-2 focus:bg-amber-300"
+							placeholder="Notes.."
+						></textarea>
+					</form>
+				</div>
+				<!--==========END OF FORM========== -->
+
+				<!--==========List of items========  -->
+				
+				<div class="container lg:col-span-3 m-2">
+					<h1 class="stamp text-lg text-right mb-4 lg:text-justify">Todo's...</h1>
+					<div class="primarybox hover:bg-amber-700 hover:shadow-md hover:shadow-amber-400">
+						<div class="m-2 mx-auto grid grid-cols-7 space-x-4">
+							<h1 class="col-span-2 stamp text-center">Do Laundry</h1>
+							<p class="col-span-3 notes">
+								Extra notes... Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Neque veniam quaerat ratione voluptas!
+							</p>
+							<p class="notes">Finish by:<span>date</span></p>
 						</div>
 					</div>
-
-					<div></div>
+					<div class="primarybox mt-4 hover:bg-amber-700 hover:shadow-md hover:shadow-amber-400">
+						<div class="m-2 mx-auto grid grid-cols-7 space-x-4">
+							<h1 class="col-span-2 stamp text-center">Do Laundry</h1>
+							<p class="col-span-3 notes">
+								Extra notes... Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Neque veniam quaerat ratione voluptas!
+							</p>
+							<p class="notes">Finish by:<span>date</span></p>
+						</div>
+					</div>
+					
 				</div>
 			</div>
+			<h1 class="invisible lg:visible text-2xl p-4 uppercase"> todo's</h1>
 		</div>
+		<!--==========End of items========  -->
 	</body>
 </html>

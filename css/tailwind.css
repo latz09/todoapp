@@ -5,20 +5,24 @@
 
 @layer components {
     .primarybox {
-        @apply place-self-stretch bg-cyan-300 rounded-bl-3xl rounded-2xl text-center shadow-xl text-blue-900;       
+        @apply place-self-stretch bg-amber-900 rounded-bl-3xl rounded-2xl text-center border-4 border-amber-400 shadow-xl text-amber-800 tracking-widest;       
     }
     .container {
-        @apply bg-cyan-200 rounded-2xl shadow-2xl shadow-cyan-500 border-4 border-cyan-100 mt-4 mb-4
+        @apply rounded-2xl shadow-2xl shadow-amber-900 border-4 border-amber-300 bg-amber-700 m-4 p-4;
     }
     .stamp {
-        @apply text-base pt-2 text-cyan-800 font-semibold opacity-80 tracking-widest
+        @apply text-base pt-2 text-amber-200 font-bold tracking-widest
     }
     .myform {
         @apply p-4 grid gap-y-6 text-xl;
     }
     .notes { 
-        @apply text-xs text-cyan-800 font-semibold opacity-80 tracking-widest
+        @apply text-xs text-amber-200 font-semibold tracking-widest
+    }
+    .titlelogo {
+        @apply text-2xl text-amber-900 font-bold text-center p-4 mb-4 bg-amber-400 opacity-90 rounded-xl tracking-widest 
     }
 }
+
 
 /*focus:outline-none focus ring-2 focus:bg-cyan-200*/

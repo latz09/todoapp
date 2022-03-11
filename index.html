@@ -5,73 +5,65 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>ToDoApp</title>
-		<link rel="stylesheet" href="/css/tailwind.css" />
-		<link rel="stylesheet" href="style.css" />
-		<script src="script.js" defer></script>
+		<link rel="stylesheet" href="./assets/styles/tailwind.css" />
+
+		<script src="./assets/scripts/app.js" defer></script>
 	</head>
 	<body
 		class="shadow-inner p-2 text-amber-800"
 		background="./imgs/plankwlight.jpg"
 	>
-		<!--========NEW TODO FORM=========-->
+		
 		<div class="titlelogo">
-			<h1 class="text-2xl lg:invisible">List of my todo's</h1>
-
+			<h1 class="text-2xl lg:invisible p-4 uppercase">todo's</h1>
 			<div class="grid gap-4 place-items-center lg:grid-cols-5">
-				<div class="container lg:col-span-2 lg:order-last">					
-					<form class="myform">
-						<textarea
+				<!--========NEW TODO FORM=========-->
+				<div class="container lg:col-span-2 lg:order-last">
+					
+					<div id="userInput" class="myform grid-row-4">
+						<label for="title"></label>
+						<input
 							type="text"
+							name="title"
+							id="title"
 							class="primarybox focus:outline-none focus ring-2 focus:bg-amber-300"
 							placeholder="New toDo...."
-						></textarea>
+						/>
 
-						<div class="place-self-end">
-							<label for="date"></label>
-							<input
-								type="date"
-								id="date1"
-								name="doneby"
-								class="primarybox focus:outline-none focus ring-2 focus:bg-amber-300"
-							/>
-						</div>
-						<textarea
+						<label for="date"></label>
+						<input
+							type="date"
+							id="date"
+							name="date"
+							class="primarybox focus:outline-none focus ring-2 focus:bg-amber-300"
+						/>
+
+						<label for="notes"></label>
+						<input
 							type="text"
+							name="notes"
 							class="primarybox focus:outline-none focus ring-2 focus:bg-amber-300"
 							placeholder="Notes.."
-						></textarea>
-					</form>
+						/>
+
+						<button
+							class="btn hover:bg-amber-600 hover:text-amber-300 hover:shadow-inner hover:border hover:border-amber-900"
+						>
+							Add to list
+						</button>
+					</div>
 				</div>
 				<!--==========END OF FORM========== -->
 
 				<!--==========List of items========  -->
-				
 				<div class="container lg:col-span-3 m-2">
-					<h1 class="stamp text-lg text-right mb-4 lg:text-justify">Todo's...</h1>
-					<div class="primarybox hover:bg-amber-700 hover:shadow-md hover:shadow-amber-400">
-						<div class="m-2 mx-auto grid grid-cols-7 space-x-4">
-							<h1 class="col-span-2 stamp text-center">Do Laundry</h1>
-							<p class="col-span-3 notes">
-								Extra notes... Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Neque veniam quaerat ratione voluptas!
-							</p>
-							<p class="notes">Finish by:<span>date</span></p>
-						</div>
-					</div>
-					<div class="primarybox mt-4 hover:bg-amber-700 hover:shadow-md hover:shadow-amber-400">
-						<div class="m-2 mx-auto grid grid-cols-7 space-x-4">
-							<h1 class="col-span-2 stamp text-center">Do Laundry</h1>
-							<p class="col-span-3 notes">
-								Extra notes... Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Neque veniam quaerat ratione voluptas!
-							</p>
-							<p class="notes">Finish by:<span>date</span></p>
-						</div>
-					</div>
-					
+					<h1 class="stamp text-lg text-center mb-4 lg:text-justify">
+						Todo's...
+					</h1>
+					<ul id="todo-list"></ul>
 				</div>
 			</div>
-			<h1 class="invisible lg:visible text-2xl p-4 uppercase"> todo's</h1>
+			<h1 class="invisible lg:visible text-2xl p-4 uppercase">todo's</h1>
 		</div>
 		<!--==========End of items========  -->
 	</body>

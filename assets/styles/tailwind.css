@@ -20,9 +20,36 @@
         @apply text-xs text-amber-200 font-semibold tracking-widest
     }
     .titlelogo {
-        @apply text-2xl text-amber-900 font-bold text-center p-4 mb-4 bg-amber-400 opacity-90 rounded-xl tracking-widest 
+        @apply text-2xl text-amber-900 font-bold text-center p-4 mb-4 bg-amber-400 opacity-90 rounded-xl tracking-widest shadow-inner shadow-black border-4 border-amber-900
+    }
+    .btn {
+        @apply bg-amber-400 p-2 justify-self-center rounded-xl shadow-xl shadow-amber-900 text-amber-900 font-semibold tracking-wide text-base
     }
 }
 
 
 /*focus:outline-none focus ring-2 focus:bg-cyan-200*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

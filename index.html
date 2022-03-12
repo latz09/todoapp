@@ -7,7 +7,7 @@
 		<title>ToDoApp</title>
 		<link rel="stylesheet" href="./assets/styles/tailwind.css" />
 
-		<script src="./assets/scripts/app.js" defer></script>
+		<script src="./assets/scripts/oop.js" defer></script>
 	</head>
 	<body
 		class="shadow-inner p-2 text-amber-800"
@@ -48,6 +48,7 @@
 
 						<button
 							class="btn hover:bg-amber-600 hover:text-amber-300 hover:shadow-inner hover:border hover:border-amber-900"
+							id="addToList"
 						>
 							Add to list
 						</button>
@@ -57,9 +58,11 @@
 
 				<!--==========List of items========  -->
 				<div class="container lg:col-span-3 m-2">
+					
 					<h1 class="stamp text-lg text-center mb-4 lg:text-justify">
 						Todo's...
 					</h1>
+					
 					<ul id="todo-list"></ul>
 				</div>
 			</div>
@@ -68,3 +71,4 @@
 		<!--==========End of items========  -->
 	</body>
 </html>
+

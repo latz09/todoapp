@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./index.html'],
+  content: ['./index.html', './assets/scripts/app.js'],
   theme: {
     extend: {
       flex: {
@@ -10,3 +10,4 @@ module.exports = {
   },
   plugins: [],
 }
+

@@ -25,6 +25,9 @@
     .btn {
         @apply bg-amber-400 p-2 justify-self-center rounded-xl shadow-xl shadow-amber-900 text-amber-900 font-semibold tracking-wide text-base
     }
+    .delete-btn {
+        @apply text-white 
+    }
 }
 
 
